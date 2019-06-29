@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'fluent/plugin/gsvsoc_pubsub/version'
+require 'fluent/plugin/gcp_pubsub/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "fluent-plugin-gsvsoc_pubsub"
-  spec.version       = Fluent::Plugin::GsvsocPubsub::VERSION
-  spec.authors       = ["pivelpin"]
-  spec.email         = ["johnmac@guardsight.com"]
+  spec.name          = "fluent-plugin-gcp_pubsub"
+  spec.version       = Fluent::Plugin::GcpPubsub::VERSION
+  spec.authors       = ["pivelpin", "rahul_splendre"]
+  spec.email         = ["johnmac@guardsight.com", "rahul@splendre.com"]
   spec.license       = "GPL-3.0"
   spec.summary       = "Fluentd plugin for Google Cloud Pub/Sub"
-  spec.description   = "A plugin for the Fluentd event collection agent that provides a coupling between a GuardSight SPOP and Google Cloud Pub/Sub"
-  spec.homepage      = "https://github.com/guardsight/fluent-plugin-gsvsoc_pubsub"
+  spec.description   = "A plugin for the Fluentd event collection agent that provides Google Cloud Pub/Sub support"
+  spec.homepage      = "https://github.com/rahul_splendre/fluent-plugin-gcp_pubsub"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
