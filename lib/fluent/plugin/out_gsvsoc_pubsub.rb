@@ -79,7 +79,7 @@ module Fluent
     end
 
     def format(tag, time, record)
-      { :tag => [tag], :timestamp => Time.at(time).to_datetime.strftime, :record => record }.to_json.to_msgpack
+      record.to_json
     end
 
     def publish(giw = 0, data, attributes)
